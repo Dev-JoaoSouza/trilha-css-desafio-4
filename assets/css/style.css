@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('reset.css');
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 69px 24px;
+    gap: 24px;
+    background-image: url('../Imagens/header-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+header h1 {
+    width: 270px;
+    font-family: "Luckiest Guy", cursive;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+header p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    max-width: 757px;
+}
+
+header .btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    width: 100%;
+}
+
+header .btns .btn1, .btn2 {
+    height: 54px;
+    border-radius: 28px;
+    background-color: #fff;
+    font-size: 1rem;
+    color: #23272A;
+    text-align: center;
+    align-content: center;
+    flex-basis: 380px;
+}
+
+header .btns .btn2 {
+    background-color: #23272A;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main img {
+    max-width: 100%;
+}
+
+main h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #23272A;
+}
+
+main p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #23272A;
+}
+
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 24px;
+    gap: 27px;
+    justify-content: center;
+    align-items: center;
+}
+
+main .secao2, .secao4 {
+    background-color: #f6f6f6;
+}
+
+main .secao4 h2 {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+}
+
+main .imagem1, .imagem2, .imagem3 {
+    flex-basis: content;
+}
+
+main .descricao1, .descricao2, .descricao3  {
+    flex-basis: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+main .descricao4 {
+    flex-basis: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+main .descricao4 h2 {
+    max-width: 600px;
+}
+
+footer {
+    width: 100%;
+    height: 140px;
+    background-color: #23272A;
+    text-align: center;
+    align-content: center;
+}
+
+@media screen and (min-width: 1100px) {
+    header {
+        align-items: center;
+    }
+    header h1 {
+        font-size: 3.5rem;
+        text-align: center;
+        width: 320px;
+    }
+    header p {
+        text-align: center;
+    }
+    header .btns .btn1, .btn2 {
+        flex-basis: content;
+        padding: 0 10px;
+        height: 44px;
+    }
+    main h2 {
+        font-size: 2.5rem;
+    }
+    main section.secao2 {
+        flex-direction: row-reverse;
+    }
+    main .descricao4 {
+        align-items: center;
+    }
+    main .descricao4 h2 {
+        text-align: center;
+    }
+    main .descricao4 p {
+        text-align: center;
+    }
+}
